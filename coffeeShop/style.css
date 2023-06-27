@@ -680,12 +680,14 @@ a {
  
  /* Карта и Бронь столика  */
  
+ /* ВОТ ТУТ ЧЕ ТО НЕ ПОЛУЧАЕТСЯ НОРМАЛЬНО. 
+ КАРТИНКА НЕ УМЕНЬШАЕТСЯ ПРИ УМЕНЬШЕНИИ ЭКРАНА */
 
  .Reservation {
     display: flex;
     flex-wrap: wrap;
     background-color: #1C1814;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 100px;
 }
 
@@ -701,6 +703,10 @@ a {
 
 }
 
+.leftresimg {
+    max-width: 500px;
+}
+
 .booking {
     font-family: 'Righteous';
     font-style: normal;
@@ -712,9 +718,9 @@ a {
     text-align: center;
 }
 
-.input {
+/* .input {
     justify-content: center;
-}
+} */
 
 input::placeholder {
     font-family: 'Urbanist';
@@ -768,12 +774,6 @@ input::placeholder {
      
  }
  
-
- 
-
- 
-
-
  
  /* Новости */
  
