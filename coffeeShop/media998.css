@@ -1,0 +1,1074 @@
+@media screen and (max-width: 998px) {
+   /* Убрал отступы */
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Хедер главной страницы */
+
+.header {
+   
+    background-image: url(img/bckg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.header-holder {
+    padding-top: 51px;
+    display: flex;
+    background-image: url(Bg.jpg);
+    height: 74px;
+    border: 5px white solid;
+    padding: 51px 300px 52px 300px;
+    /* white-space: nowrap; */
+    
+}
+
+
+
+.home { 
+    color: #FFFFFF;
+    margin-right: 48px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.home1 { 
+    color: #fff;
+    margin-right: 48px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #C99E71;
+    line-height: 22px;
+}
+
+
+.navimg {
+    margin: 0 253px 0 181px
+}
+
+
+.search1 {
+    /* position: absolute; */
+    border: none;
+    outline: none;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+}
+
+.search2 {
+    /* position: absolute;
+    bottom: -13px;
+    right: -20px; */
+    border: none;
+    outline: none;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+}
+
+.navright {
+    display: flex;
+}
+
+.searchbtn {
+    padding-right: 48px;
+}
+
+.carthead {
+    margin-left: 0px;
+    
+}
+
+/* Главная под хедером */
+
+.maindescr {
+    
+    margin-top: 147px;
+    margin-left: 375px;
+}
+
+.enj {
+    font-family: 'Righteous', cursive;
+    font-size: 72px;
+    font-weight: 400;
+    color: #FFFFFF;
+
+}
+
+.coof {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+
+.testbutton {
+    text-decoration: none;
+    background-color:#C99E71;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    padding: 24px 40px;
+    margin-left: 375px;
+    font-weight: 700;
+}
+
+/* <!-- Основновной контент до футера --> */
+
+.maincontent {
+    background-color: #14110E;
+}
+
+/* <!-- Описание --> */
+
+.description {
+    
+    display: flex;
+    align-items: center;
+    padding-top: 140px;
+    padding-left: 375px;
+
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+
+}
+
+
+.descimg {
+    display: flex;
+    padding-top: 24px;
+    
+    background-size: cover;
+    padding-left: 375px;
+    padding-right: 375px;
+    
+}
+
+.photo {
+    margin-right: 36px;
+    width: 366px;
+    height: 420px;
+}
+
+.photo :last-child {
+    margin-right: 375px; 
+}
+
+.textdesc {
+    color: #C99E71;
+    padding-right: 12px;
+    
+}
+
+.BestCoffee {
+    margin-top: 48px;
+}
+
+.place {
+    margin-top: 48px;
+    margin-left: 144px;
+}
+
+.proper {
+    margin-top: 48px;
+    margin-left: 164px;
+}
+
+.descimg2 {
+    display: flex;
+    
+    background-size: cover;
+    padding-left: 375px;
+    padding-top: 140px;
+}
+
+.descimg3 {
+    display: inline-table;
+
+}
+
+.photo2 {
+    padding-bottom: 32px;
+    width: 298px;
+    height: 302px;
+}
+
+.photo3 {
+    
+    width: 298px;
+    height: 302px;
+}
+
+.photo4 {
+    margin: 0 32px;
+    width: 298px;
+    height: 635px;
+}
+
+.textphoto {
+    background-color: #1C1814;
+    width: 510px;
+    height: 515px;
+    padding-top: 120px;
+    padding-left: 56px;
+    margin-right: 359px;
+
+}
+
+.textimg1 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #C99E71;
+    
+}
+
+.textimg2 {
+    font-family: 'Righteous', cursive;
+    font-size: 48px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.textimg3 {
+    
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.history {
+    padding-bottom: 12px;
+    
+}
+
+.historytext {
+    padding-top: 36px;
+}
+
+/* Продукция */
+
+.popprod {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color:#C99E71;
+    padding-bottom: 12px;
+    padding-left: 915px;
+   
+}
+
+.cofpopprod {
+
+    font-family: 'Righteous', cursive;
+    font-size: 48px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding-left: 717px;
+    
+
+}
+
+.product { 
+    margin-top: 140px;
+    margin-bottom: 56px;
+}
+
+
+.productimg {
+    display: flex;
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding-left: 375px;
+    padding-right: 375px;
+}
+
+.productimg2,
+.productimg3,
+.productimg1 {
+    
+    width: 366px;
+    background-color: #121315;
+    margin-right: 36px;
+
+}
+
+.prodimgdesr {
+    padding-left: 91px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    display: flex;
+
+}
+
+.prodtextdescr {
+    color: #C99E71;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 14px;
+    text-transform: uppercase;
+}
+
+
+.star {
+    padding-right: 8px;
+    width: 16.67px;
+    height: 15.85px;
+
+}
+
+.textunderprod {
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 0 60px 0 61px;
+}
+
+.price {
+    color: #FFFFFF;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 91px;
+    padding-right: 91px;
+    padding-bottom: 40px;
+}
+
+.price2 {
+    color: #C99E71;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.textunderprod1{
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 36px 60px 38px 61px;
+}
+
+.cart{
+    width: 169px;
+    height: 48px;
+    background-color: #C99E71;
+    margin: 0 98px 0 99px;
+    display: flex;
+    
+}
+
+.textcart{
+    color: #FFFFFF;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 13px 20px 13px 0px;
+    
+}   
+
+.coffee {
+    margin: 0 48px;
+}
+
+.cartwhite{
+    width: 18px;
+    height: 20px;
+    padding-left: 23px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 15px;
+}
+
+.refView {
+    padding: 20px 36px;
+    background-color: #C99E71;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* white-space: nowrap; */
+
+}
+
+.view {
+    margin-top: 56px;
+    margin-left: 853px;
+    margin-right: 815px;
+    margin-bottom: 140px;
+    display: flex;    
+}
+
+/* Кофе машина */
+
+.contentmachine {
+    background-color: #1C1814;
+    margin-left: 375px;
+    margin-right: 360px;
+    display: flex;
+}
+
+.textmachine{
+    padding-left: 160px;
+    margin-top: 72px;
+    margin-right: 80px;
+    
+}
+
+.uppertext{
+    font-family: 'Righteous', cursive;
+    font-size: 48px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 36px;
+}
+
+.middletext{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: capitalize;
+    opacity: 0.8;
+    margin-bottom: 36px;
+    line-height: 180%;
+    /* white-space: nowrap; */
+    
+}
+
+.downtext{
+    
+    padding: 20px 36px;
+    background-color: #C99E71;
+    width: 143px;
+    height: 22px;
+    
+}
+
+.discoverref{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 22px;
+}
+
+.machineimg{
+    margin: 85px 0 86px 169px;
+    
+}
+
+/* Меню */
+
+.menu{ 
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #C99E71;
+    margin-top: 140px;
+    margin-left: 940px;
+    line-height: 22px;
+}
+
+.popmenu {
+    font-family: 'Righteous', cursive;
+    font-size: 48px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 12px;
+    line-height: 130%;
+    margin-left: 729px;
+}
+
+.menuimg1{
+    display: flex;
+    margin-top: 56px;
+}
+
+
+.menuleft1 {
+    border: 1px solid #32323D;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    /* white-space: nowrap; */
+}
+
+
+.menuright1 {
+    border: 1px solid #32323D;
+    margin-left: 40px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    /* white-space: nowrap; */
+}
+
+.cof1{
+    padding: 24px 20px 24px 24px;
+}
+
+.cof2{
+    padding: 24px 20px 24px 24px;
+}
+
+.menuprice {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: #C99E71;
+    padding-left: 117px;
+    padding-right: 24px;
+    
+}
+
+.menuimg2 {
+    display: flex;
+    margin-top: 36px;
+}
+
+.menuimg3 {
+    display: flex;
+    margin-top: 36px;
+}
+
+.menuimg4 {
+    display: flex;
+    margin-top: 36px;
+}
+
+.menumain {
+    padding: 0 374px 0 375px;
+}
+
+/* Отзывы */
+
+.Testimonial { 
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #C99E71;
+    line-height: 22px;
+    padding: 140px 913px 12px 913px;
+}
+
+.Says {
+    font-family: 'Righteous', cursive;
+    font-size: 48px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 130%;
+    padding: 0px 737px 56px 737px;
+    /* white-space: nowrap; */
+}
+
+.saysblock {
+    display: flex;
+    margin: 0 375px 0 375px;
+    /* white-space: nowrap; */
+}
+
+.blockleft {
+    padding: 40px 40px 20px 40px;
+    background-color: #1C1814;
+    text-transform: capitalize;
+    
+    margin-right: 40px;
+
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
+
+}
+
+.blockright {
+    padding: 40px 40px 20px 40px;
+    background-color: #1C1814;
+    text-transform: capitalize;
+    display: flex;
+
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
+
+}
+
+.imgtextleft {
+    display: flex;
+}
+
+.starimgright{
+    display: flex;
+    padding-left: 261px;
+}
+
+.startextdown {
+    display: flex;
+}
+
+.starimg {
+    height: 20px;
+    width: 20px;
+}
+
+.John {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    padding-top: 28px;
+}
+
+.proddes {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.8;
+    padding-top: 4px;
+}
+
+.saysimg {
+    padding-right: 24px;
+}
+
+.people {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 135%;
+    color: #C99E71;
+    margin-left: 375px;
+    padding-top: 36px;
+    margin-top: 0;
+}
+
+/* Карта и Бронь столика  */
+
+.Reservation {
+    margin: 140px 375px 0 375px;
+    display: flex;
+}
+
+.rightres {
+    background-color: #1C1814;
+    padding: 72px -1px 72px 48px;
+    width: 585px;
+    height: 652px;
+}
+
+.booking{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-bottom: 56px;
+}
+
+.book {
+    background-color: #C99E71;
+    border: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 22px;
+    padding: 20px 36px;
+}
+
+.bookref{
+    margin: 56px 191px 72px 192px;
+}
+
+
+.resertext {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #C99E71;
+    margin: 72px 244px 0 244px;
+    
+}
+
+.booking {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+    padding: 0 116px 0 116px;
+    /* white-space: nowrap; */
+    margin-top: 12px;
+}
+
+.leftres {
+    width: 585px;
+    height: 652px;
+}
+
+input::placeholder {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 180%;
+    color: rgba(255, 255, 255, 0.8);
+    }
+
+#inp{
+    background-color: #14110E;
+    padding: 16px 20px 16px 20px;
+    border: none;
+    outline: none;
+    width: 449px;
+    margin: 0 48px 24px 48px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 180%;
+    color: rgba(255, 255, 255, 0.8);
+    
+}
+
+#inp:focus  {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 180%;
+    color: rgba(255, 255, 255, 0.8);
+    
+}
+
+.inp:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Новости */
+
+
+.Testi {
+    margin: 140px 375px 0 375px;
+}
+
+.news {
+    display: flex;
+}
+
+.testitext {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #C99E71;
+    margin-left: 538px;
+}
+
+.newstext{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-left: 436px;
+}
+
+.newsleft {
+    padding-bottom: 28px;
+    background-color: #1C1814;
+}
+
+.newsmiddle {
+    margin: 0 36px 0 36px;
+    background-color: #1C1814;
+}
+
+.newsright{
+    background-color: #1C1814;
+}
+
+
+.byspan {
+    color: #C99E71;
+}
+
+.by {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    margin-top: 20px;
+    /* white-space: nowrap; */
+}
+
+.newsdate {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-left: 149px;
+    margin-right: 20px;
+}
+
+.cocktails {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 16px 57px 33px 24px;
+}
+
+.readmore {
+
+    margin: 0 0 28px 24px;
+    display: flex;
+    
+}
+
+.vectorimg {
+    display: inline;
+
+}
+
+.readref {
+    text-decoration: none;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C99E71;
+}
+
+.vector2 {
+    border: none;
+    outline: none;
+    margin-left: 8px;
+    margin-top: 10px;
+    position: absolute;
+
+}
+
+.vector1 {
+    border: none;
+    outline: none;
+    margin-left: 17px;
+    margin-top: 3px;
+    position: absolute;
+
+}
+
+/* Нижняя навигация */
+
+.logodown {
+    position: relative;
+    top: 4px;
+}
+
+.name {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -7px;
+}
+
+.navimglow {
+    margin-right: 36px;
+    position: relative;
+    bottom: 20px;
+    padding: 0;
+    display: block;
+}
+
+.lowerheader {
+    margin: 166px 0 0 375px;
+    display: flex;
+    /* white-space: nowrap; */
+}
+
+
+.reflowerheader {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline;
+    margin-right: 40px;
+}
+
+
+/* Email */
+
+.emailinput {
+    margin-left: 42px;
+    align-items: center;
+    position: relative;
+    bottom: 26px;
+}
+
+
+#email{
+    border-radius: 36px;
+    background-color: #1C1814;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
+    padding: 21px 0px 22px 28px;
+    border: none;
+    margin: 0;
+    outline: none;
+    width: 328px;
+}
+
+#email:focus {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.arrowr {
+    border: none;
+    outline: none;
+    margin-left: -70px;
+    margin-top: 6px;
+    position: absolute;
+    border-radius: 30px;
+    background-color: #C99E71;
+    width: 36px;
+    height: 36px;
+    padding: 12px;
+}
+
+.arrowimg {
+    border: none;
+    outline: none;
+    margin-left: 6px;
+    margin-top: 7px;
+    position: absolute;
+
+}
+
+/* Футер */
+
+footer {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    color: #FFFFFF;
+    padding: 33px 848px 32px 849px;
+    /* white-space: nowrap; */
+    margin-top: 72px;
+    background-color: #1C1814;
+} 
+}
