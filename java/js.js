@@ -1,20 +1,19 @@
-const array = ["Лёха Мосунов","Лёша Мосунов","Мосунов Лёха","Мосунов Лёша","Леха Мосунов","Мосунов Леха",
-"Мосунов", "Мосунов Алексей", " Алексей Мосунов"]; 
+let username = prompt('Кто там', '');
 
-if(confirm("Если пидор нажми ок")) {
-    const person = prompt("Назови свое имя")
-    const isNameOfLord = array.some((name) => name.toLocaleLowerCase() === person.toLocaleLowerCase())
-    
-    if (isNameOfLord) {
-        alert("Ах ты ж пидор")
-    }   
+if (username === "Админ") {
 
-		else {
-			alert("Привет сер гей "+person)
-		}
+	let pass = prompt('Пароль?', '');
 
-}
-
-else {
-	alert("Та ты точно пидор")
+	if (pass == 'Я Главный') {
+	alert('Здравствуйте');
+	} else if (pass === '' || pass === null ){
+		alert('Отменено');
+	} else {
+		alert('Неверный пароль');
 	}
+
+} else if (username === '' || username === null ){
+	alert('Отменено');
+} else {
+	alert('Я вас не знаю');
+}
