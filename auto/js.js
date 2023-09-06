@@ -1,5 +1,5 @@
 let questions = [
-    {question: 'Тип и колво контейнеров'},
+    {question: 'Тип и кол-во контейнеров'},
     {question: 'Выдача порожнего'},
     {question: 'Погрузка'},
     {question: 'Таможенное оформление'},
@@ -10,7 +10,7 @@ let questions = [
 ];  
 
 let questionsForRef = [
-    {question: 'Тип и колво контейнеров'},
+    {question: 'Тип и кол-во контейнеров'},
     {question: 'Выдача порожнего'},
     {question: 'Погрузка'},
     {question: 'Таможенное оформление'},
@@ -23,7 +23,7 @@ let questionsForRef = [
 ];  
 
 let questionsBackLoad = [
-    {question: 'Тип и колво контейнеров'},
+    {question: 'Тип и кол-во контейнеров'},
     {question: 'Погрузка'},
     {question: 'Таможенное оформление'},
     {question: 'Сдача груженного'},
