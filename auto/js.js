@@ -36,7 +36,7 @@ let questionsBackLoad = [
 function auto(){
 
     let type = prompt('Прямая, Реф или Обратка?');
-    if (type.toLowerCase() == 'прямая'){
+    if (type !== null && type.toLowerCase() == 'прямая'){
         document.write(`<h3>
         Просчет прямая подача<br>
         Экспорт
@@ -47,7 +47,7 @@ function auto(){
         document.write(`<h3>${questions[i].question} ${value}</h3>`);
         }       
     }
-        }else if (type.toLowerCase() == 'реф'){
+        }else if (type !== null && type.toLowerCase() == 'реф'){
             document.write(`<h3>
             Просчет прямая подача РЕФ<br>
             Экспорт
@@ -58,7 +58,7 @@ function auto(){
             document.write(`<h3>${questionsForRef[i].question} ${value}</h3>`);
             }
     }
-        }else if (type.toLowerCase() == 'обратка'){
+        }else if (type !== null && type.toLowerCase() == 'обратка'){
             document.write(`<h3>
             Просчет обратка<br>
             Экспорт
@@ -69,9 +69,11 @@ function auto(){
             document.write(`<h3>${questionsBackLoad[i].question} ${value}</h3>`);
             }
         }
+        }else if (type == null) {
+            alert('Вы отменили !');
         }else {
-            alert('Спробуй ще раз');
-            auto();
-        }
+					alert('Спробуй ще раз, бо твоя відповідь не підходе до мого коду)')
+					auto();
+				}
 }
 auto()
