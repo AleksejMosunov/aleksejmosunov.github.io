@@ -36,7 +36,7 @@ let questionsBackLoad = [
 function auto(){
 
     let type = prompt('Прямая, Реф или Обратка?');
-    if (type == 'прямая'){
+    if (type.toLowerCase() == 'прямая'){
         document.write(`<h3>
         Просчет прямая подача<br>
         Экспорт
@@ -47,7 +47,7 @@ function auto(){
         document.write(`<h3>${questions[i].question} ${value}</h3>`);
         }       
     }
-        }else if (type == 'реф'){
+        }else if (type.toLowerCase() == 'реф'){
             document.write(`<h3>
             Просчет прямая подача РЕФ<br>
             Экспорт
@@ -58,7 +58,7 @@ function auto(){
             document.write(`<h3>${questionsForRef[i].question} ${value}</h3>`);
             }
     }
-        }else if (type == 'обратка'){
+        }else if (type.toLowerCase() == 'обратка'){
             document.write(`<h3>
             Просчет обратка<br>
             Экспорт
