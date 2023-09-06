@@ -32,10 +32,23 @@ let questionsBackLoad = [
     {question: 'Форма оплаты'},
 ];  
 
+let questionsTent = [
+    {question: 'Тип авто'},
+		{question: 'Вид загрузки'},
+    {question: 'Погрузка'},
+    {question: 'Таможенное оформление в Украине'},
+    {question: 'Выгрузка'},
+		{question: 'Таможенное оформление по выгрузке'},
+    {question: 'Название груза'},
+    {question: 'Вес груза'},
+    {question: 'Форма оплаты'},
+];  
+
+
 
 function auto(){
 
-    let type = prompt('Прямая, Реф или Обратка?');
+    let type = prompt('Прямая, Реф, Обратка или может Тент?');
     if (type?.toLowerCase() == 'прямая'){
         document.write(`<h3 class="text">Просчет прямая подача<br>Экспорт</h3>`)
     for (i = 0; i < questions.length; i++){
@@ -60,6 +73,14 @@ function auto(){
             document.write(`<h3 class="text">${questionsBackLoad[i].question} ${value}</h3>`);
             }
         }
+        }else if (type?.toLowerCase() == 'тент'){
+            document.write(`<h3 class="text">Просчет тент<br>Экспорт</h3>`)
+        for (i = 0; i < questionsTent.length; i++){
+            let value = prompt(questionsTent[i].question);
+            if (!!value) {
+            document.write(`<h3 class="text">${questionsTent[i].question} ${value}</h3>`);
+            }
+        }
         }else if (type == '') {
             alert('Вы ничего не ввели !');
 	    auto();
@@ -67,7 +88,7 @@ function auto(){
 	    document.write(`<h3 class="text">Ты отменил мой код</h3>`)
 	}else {
 	    alert('Спробуй ще раз, бо твоя відповідь не підходе до мого коду)')
-            auto();
+	    auto();
 	}
 }
 auto();
