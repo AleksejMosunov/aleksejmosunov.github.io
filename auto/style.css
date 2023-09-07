@@ -6,17 +6,7 @@
 	text-align: center;
 } */
 
-@media screen and (min-width: 320px) and (max-width: 768px){
-	.text {
-		padding-top: 40vh;
-		margin-left: 35vw;
-	}
-	
-	.textAnswers {
-		padding-top: 5vh;
-		margin-left: 35vw;
-	}
-}
+
 
 * {
   margin: 0;
@@ -42,12 +32,24 @@ body {
 
 .text {
 	padding-top: 100px;
-	margin-left: 45vw;
+	margin-left: 40vw;
 }
 
 .textAnswers {
 	padding-top: 10px;
-	margin-left: 45vw;
+	margin-left: 40vw;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+	.text {
+		padding-top: 15vh;
+		margin-left: 25vw;
+	}
+	
+	.textAnswers {
+		padding-top: 10px;
+		margin-left: 25vw;
+	}
 }
 
 .area {
