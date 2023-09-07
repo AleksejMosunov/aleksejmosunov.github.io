@@ -85,7 +85,7 @@ function auto(){
             alert('Вы ничего не ввели !');
 	    auto();
         }else if (!type){
-	    document.write(`<h3 class="text">Ты отменил мой код</h3>`)
+	    // document.write(`<h3 class="text">Ты отменил мой код</h3>`)
 	}else {
 	    alert('Спробуй ще раз, бо твоя відповідь не підходе до мого коду)')
 	    auto();
