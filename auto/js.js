@@ -54,7 +54,7 @@ function auto(){
     for (i = 0; i < questions.length; i++){
         let value = prompt(questions[i].question);
         if (!!value) {
-        document.write(`<h3 class="text">${questions[i].question} ${value}</h3>`);
+        document.write(`<h3 class="textAnswers">${questions[i].question} ${value}</h3>`);
         }       
     }
         }else if (type?.toLowerCase() == 'реф'){
@@ -62,7 +62,7 @@ function auto(){
         for (i = 0; i < questionsForRef.length; i++){
             let value = prompt(questionsForRef[i].question);
             if (!!value) {
-            document.write(`<h3 class="text">${questionsForRef[i].question} ${value}</h3>`);
+            document.write(`<h3 class="textAnswers">${questionsForRef[i].question} ${value}</h3>`);
             }
     }
         }else if (type?.toLowerCase() == 'обратка'){
@@ -70,7 +70,7 @@ function auto(){
         for (i = 0; i < questionsBackLoad.length; i++){
             let value = prompt(questionsBackLoad[i].question);
             if (!!value) {
-            document.write(`<h3 class="text">${questionsBackLoad[i].question} ${value}</h3>`);
+            document.write(`<h3 class="textAnswers">${questionsBackLoad[i].question} ${value}</h3>`);
             }
         }
         }else if (type?.toLowerCase() == 'тент'){
@@ -78,7 +78,7 @@ function auto(){
         for (i = 0; i < questionsTent.length; i++){
             let value = prompt(questionsTent[i].question);
             if (!!value) {
-            document.write(`<h3 class="text">${questionsTent[i].question} ${value}</h3>`);
+            document.write(`<h3 class="textAnswers">${questionsTent[i].question} ${value}</h3>`);
             }
         }
         }else if (type == '') {
