@@ -8,13 +8,13 @@
 
 @media screen and (min-width: 320px) and (max-width: 768px){
 	.text {
-		padding-top: 100px;
-		margin-left: 45vw;
+		padding-top: 40vh;
+		margin-left: 35vw;
 	}
 	
 	.textAnswers {
-		padding-top: 10px;
-		margin-left: 45vw;
+		padding-top: 5vh;
+		margin-left: 35vw;
 	}
 }
 
