@@ -1,95 +1,93 @@
-let questions = [
-    {question: 'Тип и кол-во контейнеров'},
-    {question: 'Выдача порожнего'},
-    {question: 'Погрузка'},
-    {question: 'Таможенное оформление'},
-    {question: 'Сдача груженного'},
-    {question: 'Название груза'},
-    {question: 'Вес груза'},
-    {question: 'Форма оплаты'},
-];  
+let questions = {
+	direct: [
+		'Тип и кол-во контейнеров',
+		'Выдача порожнего',
+		'Погрузка',
+		'Таможенное оформление',
+		'Сдача груженного',
+		'Название груза',
+		'Вес груза',
+		'Форма оплаты',
+	],
+	ref: [
+		'Тип и кол-во контейнеров',
+		'Выдача порожнего',
+		'Погрузка',
+		'Таможенное оформление',
+		'Сдача груженного',
+		'Название груза',
+		'Температура',
+		'Генератор',
+		'Вес груза',
+		'Форма оплаты',
+	],
+	backLoading: [
+		'Тип и кол-во контейнеров',
+		'Погрузка',
+		'Таможенное оформление',
+		'Сдача груженного',
+		'Название груза',
+		'Вес груза',
+		'Форма оплаты',
+	],
+	tent: [
+		'Тип авто',
+		'Вид загрузки',
+		'Погрузка',
+		'Таможенное оформление в Украине',
+		'Выгрузка',
+		'Таможенное оформление по выгрузке',
+		'Название груза',
+		'Вес груза',
+		'Форма оплаты',
+	],
+}
 
-let questionsForRef = [
-    {question: 'Тип и кол-во контейнеров'},
-    {question: 'Выдача порожнего'},
-    {question: 'Погрузка'},
-    {question: 'Таможенное оформление'},
-    {question: 'Сдача груженного'},
-    {question: 'Название груза'},
-    {question: 'Температура'},
-    {question: 'Генератор'},
-    {question: 'Вес груза'},
-    {question: 'Форма оплаты'},
-];  
-
-let questionsBackLoad = [
-    {question: 'Тип и кол-во контейнеров'},
-    {question: 'Погрузка'},
-    {question: 'Таможенное оформление'},
-    {question: 'Сдача груженного'},
-    {question: 'Название груза'},
-    {question: 'Вес груза'},
-    {question: 'Форма оплаты'},
-];  
-
-let questionsTent = [
-    {question: 'Тип авто'},
-		{question: 'Вид загрузки'},
-    {question: 'Погрузка'},
-    {question: 'Таможенное оформление в Украине'},
-    {question: 'Выгрузка'},
-		{question: 'Таможенное оформление по выгрузке'},
-    {question: 'Название груза'},
-    {question: 'Вес груза'},
-    {question: 'Форма оплаты'},
-];  
-
-
-
-function auto(){
-
-    let type = prompt('Прямая, Реф, Обратка или может Тент?');
-    if (type?.toLowerCase() == 'прямая'){
-        document.write(`<h3 class="text">Просчет прямая подача<br>Экспорт</h3>`)
-    for (i = 0; i < questions.length; i++){
-        let value = prompt(questions[i].question);
-        if (!!value) {
-        document.write(`<h3 class="textAnswers">${questions[i].question} ${value}</h3>`);
-        }       
-    }
-        }else if (type?.toLowerCase() == 'реф'){
-            document.write(`<h3 class="text">Просчет прямая подача РЕФ<br>Экспорт</h3>`)
-        for (i = 0; i < questionsForRef.length; i++){
-            let value = prompt(questionsForRef[i].question);
-            if (!!value) {
-            document.write(`<h3 class="textAnswers">${questionsForRef[i].question} ${value}</h3>`);
-            }
-    }
-        }else if (type?.toLowerCase() == 'обратка'){
-            document.write(`<h3 class="text">Просчет обратка<br>Экспорт</h3>`)
-        for (i = 0; i < questionsBackLoad.length; i++){
-            let value = prompt(questionsBackLoad[i].question);
-            if (!!value) {
-            document.write(`<h3 class="textAnswers">${questionsBackLoad[i].question} ${value}</h3>`);
-            }
-        }
-        }else if (type?.toLowerCase() == 'тент'){
-            document.write(`<h3 class="text">Просчет тент<br>Экспорт</h3>`)
-        for (i = 0; i < questionsTent.length; i++){
-            let value = prompt(questionsTent[i].question);
-            if (!!value) {
-            document.write(`<h3 class="textAnswers">${questionsTent[i].question} ${value}</h3>`);
-            }
-        }
-        }else if (type == '') {
-            alert('Вы ничего не ввели !');
-	    auto();
-        }else if (!type){
-	    console.log('Ты отменил мой код');
-	    // document.write(`<h3 class="text">Ты отменил мой код</h3>`)
-	}else {
-	    alert('Спробуй ще раз, бо твоя відповідь не підходе до мого коду)')
-	    auto();
+function auto() {
+	let type = prompt('Прямая, Реф, Обратка или может Тент?')
+	if (type?.trim().toLowerCase() == 'прямая') {
+		document.write(`<h3 class="text">Просчет прямая подача<br>Экспорт</h3>`)
+		// for (i = 0; i < questions.length; i++)
+		questions.direct.map(question => {
+			let value = prompt(question)
+			if (!!value) {
+				document.write(`<h3 class="textAnswers">${question} ${value}</h3>`)
+			}
+		})
+	} else if (type?.trim().toLowerCase() === 'реф') {
+		document.write(`<h3 class="text">Просчет прямая подача реф<br>Экспорт</h3>`)
+		questions.ref.map(question => {
+			let value = prompt(question)
+			if (!!value) {
+				document.write(`<h3 class="textAnswers">${question} ${value}</h3>`)
+			}
+		})
+	} else if (type?.trim().toLowerCase() === 'обратка') {
+		document.write(`<h3 class="text">Просчет обратка<br>Экспорт</h3>`)
+		questions.backLoading.map(question => {
+			let value = prompt(question)
+			if (!!value) {
+				document.write(`<h3 class="textAnswers">${question} ${value}</h3>`)
+			}
+		})
+	} else if (type?.trim().toLowerCase() === 'тент') {
+		document.write(`<h3 class="text">Просчет тент <br>Экспорт</h3>`)
+		questions.tent.map(question => {
+			let value = prompt(question)
+			if (!!value) {
+				document.write(`<h3 class="textAnswers">${question} ${value}</h3>`)
+			}
+		})
+	} else if (type == '') {
+		alert('Вы ничего не ввели !')
+		auto()
+	} else if (!type) {
+		console.log('Ты отменил мой код')
+		// document.write(`<h3 class="text">Ты отменил мой код</h3>`)
+	} else {
+		alert('Спробуй ще раз, бо твоя відповідь не підходе до мого коду)')
+		auto()
 	}
 }
-auto();
+
+auto()
