@@ -1,37 +1,37 @@
 let questions = {
 	direct: [
-		'Контейнер',
-		'Выдача порожнего',
+		'Экспорт',
+		'Порожняк',
 		'Погрузка',
 		'ТО',
-		'Сдача груженного',
+		'Сдача',
 		'Груз',
 		'Вес',
 		'Оплата',
 	],
 	ref: [
-		'Контейнер',
-		'Выдача порожнего',
+		'Экспорт',
+		'Порожняк',
 		'Погрузка',
-		'Таможенное оформление',
-		'Сдача груженного',
-		'Название груза',
+		'ТО',
+		'Сдача',
+		'Груз',
 		'Температура',
 		'Генератор',
-		'Вес груза',
+		'Вес',
 		'Оплата',
 	],
 	backLoading: [
-		'Контейнер',
+		'Экспорт',
 		'Погрузка',
 		'ТО',
-		'Сдача груженного',
+		'Сдача',
 		'Груз',
 		'Вес',
 		'Оплата',
 	],
 	tent: [
-		'Тип авто',
+		'Экспорт',
 		'Вид загрузки',
 		'Погрузка',
 		'ТО в Украине',
@@ -46,7 +46,7 @@ let questions = {
 function auto() {
 	let type = prompt('Прямая, Реф, Обратка или может Тент?')
 	if (type?.trim().toLowerCase() == 'прямая') {
-		document.write(`<h3 class="text">Просчет прямая подача<br>Экспорт</h3>`)
+		document.write(`<h3 class="text">Просчет \nпрямая подача</h3>`)
 		// for (i = 0; i < questions.length; i++)
 		questions.direct.map(question => {
 			let value = prompt(question)
@@ -55,7 +55,7 @@ function auto() {
 			}
 		})
 	} else if (type?.trim().toLowerCase() === 'реф') {
-		document.write(`<h3 class="text">Просчет прямая подача реф<br>Экспорт</h3>`)
+		document.write(`<h3 class="text">Просчет \nпрямая подача реф</h3>`)
 		questions.ref.map(question => {
 			let value = prompt(question)
 			if (!!value) {
@@ -63,7 +63,7 @@ function auto() {
 			}
 		})
 	} else if (type?.trim().toLowerCase() === 'обратка') {
-		document.write(`<h3 class="text">Просчет обратка<br>Экспорт</h3>`)
+		document.write(`<h3 class="text">Просчет \nобратка</h3>`)
 		questions.backLoading.map(question => {
 			let value = prompt(question)
 			if (!!value) {
@@ -71,7 +71,7 @@ function auto() {
 			}
 		})
 	} else if (type?.trim().toLowerCase() === 'тент') {
-		document.write(`<h3 class="text">Просчет тент <br>Экспорт</h3>`)
+		document.write(`<h3 class="text">Просчет \nтент</h3>`)
 		questions.tent.map(question => {
 			let value = prompt(question)
 			if (!!value) {
