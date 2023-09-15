@@ -21,7 +21,7 @@ li{
 }
 
 .header{
-	background: url(image/traveller-1.png) 85% 110%;
+	background: url(../image/traveller-1.png) 85% 110%;
 	background-repeat: no-repeat;
 	block-size: cover;
 	padding-bottom: 105px;
