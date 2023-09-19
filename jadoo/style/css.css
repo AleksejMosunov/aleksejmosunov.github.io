@@ -478,7 +478,25 @@ gap: 60px;
 	left: -68px;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 1066px) {
+@media screen and (max-width: 1279px) and (min-width: 1025px) {
+
+	.menu{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+
+	.containerForHeader{
+		padding-top: 48px;
+		background: none;
+		background-repeat: no-repeat;
+	}
+	
+	.header{
+		padding-bottom: 105px;
+		background: none;
+	}
+
 	.navMenu{
 		display: flex;
 		flex-wrap: wrap;
@@ -522,17 +540,41 @@ gap: 60px;
 	}
 }
 
-@media screen and (max-width: 1065px) and (min-width: 900px) {
-	.customization{
+@media screen and (max-width: 1024px) and (min-width: 900px) {
+
+	.container {
+		margin-left: 5em;
+		margin-right: 5em;
+	}
+
+	.menu{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+
+	.containerForHeader{
+		padding-top: 48px;
+		background: none;
+		background-repeat: no-repeat;
+	}
+	
+	.header{
+		padding-bottom: 105px;
+		background: none;
+	}
+
+	/* .customization{
 		position: relative;
 		left: 300px;
 		top: 20px;
-	}
+	} */
 
 	.navMenu{
 		display: flex;
 		flex-wrap: wrap;
 		gap: 10px;
+		margin-left: 5em;
 	}
 
 	.offerDescr{
@@ -565,21 +607,53 @@ gap: 60px;
 	.reviewsDescr{
 		padding: 0 68px 34px 34px;
 	}
-	.store{
+	/* .store{
 		position: relative;
 		left: 10px;
 		top: 40px;
+	} */
+
+	
+	.mailImg{
+		top: -110px;
+		right: -140px;
+		position: relative;
+		float: right;
 	}
 
 }
 
 
 
-	@media screen and (max-width: 899px) {
+	@media screen and (max-width: 899px) and (min-width: 426px) {
+
+		.container {
+			margin-left: 5em;
+			margin-right: 5em;
+		}
+	
+
+		.menu{
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.containerForHeader{
+			padding-top: 48px;
+			background: none;
+			background-repeat: no-repeat;
+		}
+		
+		.header{
+			padding-bottom: 105px;
+			background: none;
+		}
+
 		.navMenu{
 			display: flex;
 			flex-wrap: wrap;
 			gap: 10px;
+			margin-left: 2em;
 
 		}
 
@@ -623,9 +697,175 @@ gap: 60px;
 		.events{
 			margin-top: 30px;
 		}
-		.store{
+		/* .store{
 			position: relative;
 			left: 100px;
 			top: 30px;
+		} */
+
+		.mailImg{
+			top: -110px;
+			right: -170px;
+			position: relative;
+			float: right;
 		}
+	}
+
+	@media screen and (max-width: 425px) {
+
+		.main{
+			margin-top: 5em;
+		}
+
+		.topSubheading{
+			margin-top: 4em;
+		}
+
+		.menuHolder{
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container {
+			margin-left: 2em;
+			margin-right: 5em;
+		}
+
+		.flights {
+			padding: 1px 1px 1px 1px;
+		}
+	
+
+		.menu{
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: 7em;
+		}
+
+		.containerForHeader{
+			padding-top: 0;
+			background: none;
+			background-repeat: no-repeat;
+		}
+		
+		.header{
+			padding-bottom: 105px;
+			background: none;
+		}
+
+		.navMenu{
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+
+		.menuTitle{
+			margin-right: 20px;
+		}
+	
+		.offerDescr{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			/* margin-left: 10em; */
+		}
+	
+		.topHolder{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.book{
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 4em;
+		}
+		.airlines{
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 4em;
+		}
+		.email{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.footerWrapper{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		.reviewsDescr{
+			padding: 0 68px 34px 34px;
+		}
+
+		.reviews{
+			margin-top: 4em;
+		}
+
+		.customization{
+			margin-top: 30px;
+		}
+		.events{
+			margin-top: 30px;
+		}
+		.flights{
+			padding: 0;
+		}
+
+		.mailImg{
+			top: -110px;
+			right: -60px;
+			position: relative;
+			float: right;
+		}
+
+		.subscribeText{
+			font-size: 16px;
+			line-height: normal;
+			text-align: left;
+		}
+
+		.subscribe{
+			padding: 80px 30px 0 40px;
+		}
+
+		.mainHeading{
+			font-size: 32px;
+			line-height: normal;
+			letter-spacing: normal;
+		}
+
+		.maidDesc{
+			line-height: normal;
+		}
+
+		.emailInp {
+			padding: 25px 35px 26px 76px;
+		}
+
+		.reviewsText{
+			line-height: normal;
+		}
+
+		.footerWrapper{
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.footerText{
+			margin-left: 1em;
+			margin-bottom: 2em;
+		}
+
+		.store{
+			margin-left: 3em;
+			margin-top: 2em;
+		}
+
+		.footer{
+			margin-top: 4em;
+		}
+	
+
 	}
