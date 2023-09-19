@@ -20,10 +20,15 @@ li{
 	margin: 48px 135px 0 135px;
 }
 
+.containerForHeader{
+	padding-top: 48px;
+	background: url(../image/Decore.png) 93% 0%;
+	background-repeat: no-repeat;
+}
+
 .header{
 	background: url(../image/traveller-1.png) 85% 110%;
 	background-repeat: no-repeat;
-	block-size: cover;
 	padding-bottom: 105px;
 }
 
@@ -157,6 +162,10 @@ gap: 60px;
 	margin-bottom: 60px;
 }
 
+.top{
+	margin-bottom: 20px;
+}
+
 .topHolder{
 	display: flex;
 	justify-content: space-between;
@@ -164,24 +173,36 @@ gap: 60px;
 }
 
 .uk{
-	width: 314px;
-	padding-bottom: 12px;
+	padding-bottom: 50px;
 	border-radius: 24px;
 	box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);	
 }
 
 .europe{
-	width: 314px;
 	border-radius: 24px;
 	box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);	
 }
 
 
 .italy{
-	width: 314px;
 	border-radius: 24px;
 	box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);	
+	align-items: center;
+}
 
+.price{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 20px 10px 20px;
+}
+
+.daysTrip{
+	margin: 0 20px 0 20px;
+	padding-bottom: 12px;
+}
+
+.days{
+	margin-left: 5px;
 }
 
 
