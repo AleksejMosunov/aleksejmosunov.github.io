@@ -21,13 +21,13 @@ li{
 }
 
 .containerForHeader{
-	padding-top: 48px;
-	background: url(../image/Decore.png) 100% 0%;
+	padding-top: 1px;
+	background: url(../image/Decore.png) 108% 0%;
 	background-repeat: no-repeat;
 }
 
 .header{
-	background: url(../image/traveller-1.png) 85% 110%;
+	background: url(../image/traveller-1.png) 113% 105%;
 	background-repeat: no-repeat;
 	padding-bottom: 105px;
 }
