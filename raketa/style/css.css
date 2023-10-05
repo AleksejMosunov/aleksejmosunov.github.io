@@ -152,3 +152,11 @@ body {
 .in_pit {
   background: rgba(246, 255, 0, 0.6);
 }
+
+@media screen and (max-width: 1440px) {
+  .data_name {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
