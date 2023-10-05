@@ -206,6 +206,7 @@ input {
 
   .data_info_last_time {
     margin-right: 0;
+    padding-left: 1em;
   }
 
   .data_info_avg {
