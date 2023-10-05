@@ -7,6 +7,10 @@ body {
   font-weight: 500;
 }
 
+input {
+  outline: none;
+}
+
 * {
   margin: 0;
   padding: 0;
