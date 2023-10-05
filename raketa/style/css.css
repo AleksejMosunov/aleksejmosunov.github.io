@@ -1,0 +1,154 @@
+body {
+  background: url(../img/tv.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 40px 150px 0 150px;
+}
+
+.race_time {
+  color: white;
+}
+
+.inp_data_name {
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+
+.data_name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  text-align: end;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.data_info_holder {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.team {
+  display: flex;
+  color: white;
+  font-size: 20px;
+  justify-content: space-between;
+  margin-top: 5px;
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.data_info_driver {
+  margin-left: 55px;
+}
+
+.data_info_last_time {
+  margin-right: 15px;
+}
+
+.data_info_avg {
+  margin-left: 60px;
+}
+
+.team_number {
+  width: 40px;
+}
+
+.team_driver {
+  width: 100px;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  justify-content: start;
+}
+
+.pro {
+  background: rgb(255, 0, 0);
+  border-radius: 5px;
+}
+
+.street {
+  background: rgb(255, 204, 0);
+  border-radius: 5px;
+}
+
+.autolife {
+  background: rgb(0, 255, 51);
+  border-radius: 5px;
+}
+
+.raketa {
+  background: violet;
+}
+
+.best {
+  background: violet;
+}
+
+.worse {
+  background: red;
+}
+
+.better {
+  background: green;
+}
+
+.probably_soon_pit {
+  background: rgb(0, 255, 0);
+}
+
+.early {
+  background: red;
+}
+
+.drova {
+  background: red;
+}
+
+.team_driver,
+.team_avg_time,
+.team_last_time,
+.team_previous_time,
+.team_stint_time {
+  border-radius: 5px;
+  width: 65px;
+}
+
+/* .data_info_team,
+.data_info_driver,
+.data_info_avg,
+.data_info_last_time,
+.data_info_previous_time,
+.data_info_stint_time {
+  width: 7em;
+} */
+
+.in_pit {
+  background: rgba(246, 255, 0, 0.6);
+}
