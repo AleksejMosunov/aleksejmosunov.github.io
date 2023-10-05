@@ -162,4 +162,16 @@ body {
   .container {
   padding: 0;
 }
+
+  .data_info_driver {
+  margin-left: 0;
+}
+
+.data_info_last_time {
+  margin-right: 0;
+}
+
+.data_info_avg {
+  margin-left: 0;
+}
 }
