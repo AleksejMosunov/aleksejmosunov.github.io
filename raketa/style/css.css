@@ -34,7 +34,7 @@ li {
 
 .laps {
   overflow: scroll; /* Добавляем полосы прокрутки */
-  width: 100px; /* Ширина блока */
+  width: 90px; /* Ширина блока */
   height: 200px; /* Высота блока */
   padding: 5px 10px 5px 10px; /* Поля вокруг текста */
   background-color: rgb(85, 85, 85, 0.9);
