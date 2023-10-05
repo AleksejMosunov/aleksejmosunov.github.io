@@ -19,7 +19,7 @@
         <p class="time">Время гонки: 2:45:36</p>
       </div>
       <div class="data_name">
-        <input class="inp_data_name" type="text" name="" id="" placeholder="Время пит-стопа" />
+        <input class="inp_data_name" type="text" name="" id="" placeholder="Круг после пита" />
         <input class="inp_data_name" type="text" name="" id="" placeholder="Время плохого круга" />
         <input class="inp_data_name" type="text" name="" id="" placeholder="Время для ракеты" />
         <input class="inp_data_name" type="text" name="" id="" placeholder="Время для драчки" />
@@ -35,7 +35,7 @@
         <p class="data_info_stint">Stint time</p>
       </div>
 
-      <div class="team">
+      <div class="team dropdown">
         <p class="team_number pro">1</p>
         <p class="team_driver">
           Andrey
@@ -49,7 +49,75 @@
 
       <div class="team">
         <p class="team_number street">14</p>
-        <p class="team_driver">Sereja</p>
+        <div class="team_driver popup" onclick="myFunction()">
+          Sereja
+          <div class="popuptext" id="myPopup">
+            <ul class="laps">
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.99</li>
+              <li>49.87</li>
+              <li>49.67</li>
+              <li>49.87</li>
+              <li>49.67</li>
+            </ul>
+          </div>
+          <script>
+            function myFunction() {
+              var popup = document.getElementById('myPopup');
+              popup.classList.toggle('show');
+            }
+          </script>
+        </div>
         <p class="team_avg_time raketa">49.44</p>
         <p class="team_last_time worse">49.73</p>
         <p class="team_previous_time">49.52</p>
