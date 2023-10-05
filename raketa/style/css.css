@@ -219,5 +219,9 @@ input {
   .time {
     text-align: center;
     margin-bottom: 1em;
+    font-size: 20px;
   }
+
+  .team{
+    font-size: 15px;
 }
