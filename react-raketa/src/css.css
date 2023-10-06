@@ -40,6 +40,7 @@ li {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  transition-duration: 0.3s;
 }
 
 .popup .popuptext {
@@ -61,7 +62,7 @@ li {
 }
 
 .popup:hover {
-  color: rgb(0, 255, 0);
+  color: rgb(123, 0, 255);
 }
 
 .popup .show {
@@ -100,18 +101,22 @@ input {
 }
 
 .container {
-  padding: 40px 10px 0 10px;
+  padding: 40px 80px 0 80px;
 }
 
 .inp_data_name {
   padding: 10px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, 0.5);
   border: none;
   border-radius: 20px;
   color: rgb(255, 255, 255);
-  font-size: 15px;
+  font-size: 20px;
   margin: 0 20px 0 20px;
+}
+
+input::placeholder {
+  color: rgb(255, 255, 255);
 }
 
 .data_name {
@@ -130,7 +135,7 @@ input {
   color: white;
   font-size: 20px;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -179,6 +184,7 @@ input {
 
 .team_number {
   width: 40px;
+  padding: 5px 0 5px 0;
 }
 
 .team_driver {
@@ -186,7 +192,6 @@ input {
   align-items: center;
   display: flex;
   gap: 5px;
-  justify-content: start;
 }
 
 .pro {
@@ -240,6 +245,7 @@ input {
 .team_best_time {
   border-radius: 5px;
   width: 65px;
+  padding: 5px 0 5px 0;
 }
 
 .copyright {
