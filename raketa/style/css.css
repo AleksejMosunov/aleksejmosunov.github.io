@@ -223,7 +223,7 @@ input {
 }
 
 .copyright {
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0, 0.2);
   padding: 30px 0 30px 0;
   text-align: center;
   margin-top: 20px;
@@ -251,7 +251,7 @@ input {
 
   .inp_data_name {
     padding: 2px;
-    text-align: start;
+    text-align: center;
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-radius: 20px;
@@ -310,6 +310,7 @@ input {
   .data_info_holder {
     font-size: 13px;
     word-break: normal;
+    margin-top: 10px;
   }
 
   .time {
@@ -352,12 +353,26 @@ input {
 
   .inp_data_name {
     padding: 10px;
-    text-align: start;
+    text-align: center;
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-radius: 20px;
     color: rgb(255, 255, 255);
     font-size: 13px;
+  }
+
+  .copyright {
+    font-size: 10px;
+    padding: 10px 0 10px 0;
+    margin-top: 5px;
+  }
+
+  .data_name {
+    margin-top: 10px;
+  }
+
+  .header {
+    margin-bottom: 0px;
   }
 }
 
