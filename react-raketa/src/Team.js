@@ -6,10 +6,10 @@ import {
   avgLapsTime,
   avgTenBestLaps,
   bestLap,
-  avgStintLeft,
   teamNumber,
   driver,
   stringStintTime,
+  avgStintLeftAsText,
 } from './utils';
 function Team() {
   return (
@@ -25,7 +25,7 @@ function Team() {
       <p className="team_avg_time">{avgLapsTime.toFixed(2)}</p>
       <p className="team_avgTenLaps_time middle drova raketa">{avgTenBestLaps.toFixed(2)}</p>
       <p className="team_best_time">{bestLap.toFixed(2)}</p>
-      <p className="team_avg_team_time">{avgStintLeft.toFixed(2)}</p>
+      <p className="team_avg_team_time">{avgStintLeftAsText}</p>
     </div>
   );
 }

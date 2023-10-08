@@ -7,8 +7,8 @@ function Header() {
   return (
     <div className="header">
       <img className="raketa_img_header" src={raketa} alt="raketa" width="80px" height="80px" />
-      <p className="race_name">7H ENDURANCE SWS 22.10.2023</p>
-      <p className="time">Время гонки: {data.Clock.slice(0, 8)}</p>
+      <p className="race_name">{data.Name}</p>
+      <p className="time">Время гонки: {data.ClockAsText}</p>
     </div>
   );
 }

@@ -1,48 +1,5 @@
 import data from './sample-endurance.json';
 
-export function myFunction(e) {
-  e.preventDefault();
-  let popup = document.getElementById('myPopup');
-  popup.classList.toggle('show');
-}
-
-export function AvgLapsTime(arr) {
-  return arr.reduce((partial_sum, a) => partial_sum + a, 0) / arr.length;
-}
-
-export function formattedTime(time) {
-  let minutes = Math.floor(time / 60);
-  let seconds = (time % 60) / 60;
-  let total = minutes + seconds;
-  return total;
-}
-
-export function formattedTimeToString(time) {
-  let minutes = Math.floor(time / 60);
-  let seconds = time % 60;
-  let total = `${minutes}:${seconds}`;
-  return total.slice(0, 5);
-}
-
-export function formattedLeftTimeToString(time) {
-  let hours = Math.floor(leftTime / 60 / 60);
-  let minutes = Math.floor(time / 60) - hours * 60;
-  let seconds = time % 60;
-  let total = `${hours}:${minutes}:${seconds}`;
-  return total.slice(0, 7);
-}
-
-export function avgStintTimeLeft(leftTime) {
-  let hours = Math.floor(leftTime / 60 / 60);
-  let minutes = Math.floor(leftTime / 60) - hours * 60;
-  let seconds = leftTime % 60;
-  let time = ((hours * 60 + minutes) * 60 + seconds) / 60;
-  let pits = 6;
-  let pitsTime = 3 * pits;
-
-  return (time + pitsTime) / pits;
-}
-
 // Данные с JSON
 
 export let info = data.Drivers[0].Drivers;
@@ -76,8 +33,61 @@ export let bestLap = Math.min(...arrLaps);
 
 export let stintTimeFromJson = data.Drivers[0].StintTimeMs / 1000;
 
-export let avgStintLeft = avgStintTimeLeft(leftTime);
-
 export let stringStintTime = formattedTimeToString(stintTimeFromJson);
 
 export let stintTimeToNumber = formattedTime(stintTimeFromJson);
+
+export function myFunction(e) {
+  e.preventDefault();
+  let popup = document.getElementById('myPopup');
+  popup.classList.toggle('show');
+}
+
+export function AvgLapsTime(arr) {
+  return arr.reduce((partial_sum, a) => partial_sum + a, 0) / arr.length;
+}
+
+export function formattedTime(time) {
+  let minutes = Math.floor(time / 60);
+  let seconds = (time % 60) / 60;
+  let total = minutes + seconds;
+  return total;
+}
+
+export function formattedTimeToString(time) {
+  let minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+  let total = `${minutes}:${seconds}`;
+  return total.slice(0, 5);
+}
+
+// export function formattedLeftTimeToString(time) {
+//   let hours = Math.floor(time / 60 / 60);
+//   let minutes = Math.floor(time / 60) - hours * 60;
+//   let seconds = time % 60;
+//   let total = `${hours}:${minutes}:${seconds}`;
+//   return total.slice(0, 7);
+// }
+
+export function formattedAvgStintLeftToString(time) {
+  // let hours = Math.floor(time / 60 / 60);
+  let minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+  let total = `${minutes}:${seconds}`;
+  return total.slice(0, 7);
+}
+
+let pits = data.Drivers[0].TotalPitStops;
+const quantityOfPits = 14;
+// const quantityOfStints = 15;
+let quantityOfStintsLefts = quantityOfPits - pits + 1;
+let pitsLeft = (quantityOfPits - pits) * 3 * 60;
+
+// export function avgStintTimeLeft() {
+//   return formattedTime(leftTime) + stintTimeToNumber - pitsLeft / quantityOfStints;
+// }
+
+export let avgStintLeft = (leftTime + stintTimeToNumber * 60 - pitsLeft) / quantityOfStintsLefts;
+export let avgStintLeftAsText = formattedAvgStintLeftToString(avgStintLeft).slice(0, 5);
+
+console.log(data.Name);
