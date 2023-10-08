@@ -30,7 +30,7 @@ li {
   margin-right: 400px;
 }
 
-/* Покруговка !! */
+/* Popup !! */
 
 .popup {
   position: relative;
@@ -48,17 +48,21 @@ li {
   color: #fff;
   position: absolute;
   z-index: 1;
-  margin-left: 110px;
+  margin-left: 80px;
   margin-top: 150px;
 }
 
 .laps {
   overflow: scroll; /* Добавляем полосы прокрутки */
-  height: 200px; /* Высота блока */
-  padding: 5px 20px 5px 20px; /* Поля вокруг текста */
+  height: 140px; /* Высота блока */
+  padding: 10px 10px 5px 10px; /* Поля вокруг текста */
   background-color: rgb(85, 85, 85, 0.9);
   border-radius: 20px;
   font-size: 15px;
+  width: 160px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 .popup:hover {
@@ -89,7 +93,7 @@ li {
     opacity: 1;
   }
 }
-/* Конец покруговки ! */
+/* Popup */
 
 input {
   outline: none;
@@ -164,7 +168,7 @@ input::placeholder {
 
 .data_info_best_time {
   position: relative;
-  left: 22px;
+  left: 10px;
 }
 
 .data_info_last_time {
@@ -179,7 +183,7 @@ input::placeholder {
 
 .data_info_stint {
   position: relative;
-  left: 3px;
+  left: 18px;
 }
 
 .team_number {
@@ -213,15 +217,11 @@ input::placeholder {
   background: violet;
 }
 
-.best {
-  background: violet;
-}
-
-.worse {
+.drova {
   background: red;
 }
 
-.better {
+.middle {
   background: rgb(0, 255, 0);
 }
 
@@ -239,7 +239,7 @@ input::placeholder {
 
 .team_driver,
 .team_avg_time,
-.team_last_time,
+.team_avgTenLaps_time,
 .team_previous_time,
 .team_stint_time,
 .team_best_time {
@@ -359,7 +359,7 @@ input::placeholder {
 
   .team_driver,
   .team_avg_time,
-  .team_last_time,
+  .team_avgTenLaps_time,
   .team_previous_time,
   .team_stint_time,
   .team_best_time {
