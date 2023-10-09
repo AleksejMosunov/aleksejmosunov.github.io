@@ -172,6 +172,11 @@ input::placeholder {
   left: 15px;
 }
 
+.data_info_stint {
+  position: relative;
+  right: 17px;
+}
+
 .data_info_last_time {
   position: relative;
   left: 30px;
@@ -243,22 +248,35 @@ input::placeholder {
   background: red;
 }
 
-.team_driver {
-  text-wrap: nowrap;
-}
-/* .team_avg_time, */
-/* .team_avgTenLaps_time, */
-/* .team_previous_time,
+.team_driver,
+.team_avg_time,
+.team_previous_time,
 .team_stint_time,
 .team_best_time {
-  border-radius: 5px;
-  width: 65px;
-  padding: 5px 0 5px 0;
-} */
+  text-align: left;
+  text-wrap: nowrap;
+  width: 80px;
+}
+
+.team_avg_time {
+  position: relative;
+  left: 10px;
+}
+
+.team_best_time {
+  position: relative;
+  left: 10px;
+}
 
 .team_avgTenLaps_time {
-  padding: 5px;
+  position: relative;
+  right: 5px;
+}
+
+.team_avgTenLaps_time {
   border-radius: 8px;
+  text-align: center;
+  width: 65px;
 }
 
 .copyright {
@@ -337,7 +355,7 @@ input::placeholder {
 
   .data_info_best_time {
     position: relative;
-    left: 8px;
+    left: 10px;
   }
 
   .data_info_avg_stint_team_time {
@@ -365,14 +383,14 @@ input::placeholder {
     height: 12px;
   }
 
-  .team_driver,
+  /* .team_driver, */
   .team_avg_time,
   .team_avgTenLaps_time,
   .team_previous_time,
   .team_stint_time,
   .team_best_time {
     border-radius: 5px;
-    /* width: 40px; */
+    width: 40px;
   }
 
   .team_number {
@@ -417,10 +435,39 @@ input::placeholder {
   .header {
     margin-bottom: 0px;
   }
+  .team_stint_time {
+    position: relative;
+    left: 10px;
+  }
+  .team_driver {
+    position: relative;
+    left: 5px;
+  }
+  .team_best_time {
+    position: relative;
+    left: 5px;
+  }
 }
 
-/* @media screen and (max-width: 570px) {
-  .raketa_img {
-    display: none;
+@media screen and (max-width: 400px) {
+  /* .team_driver, */
+  .team_avg_time,
+  .team_avgTenLaps_time,
+  .team_previous_time,
+  .team_stint_time,
+  .team_best_time {
+    border-radius: 5px;
+    width: 30px;
   }
-} */
+  .team_driver {
+    width: 60px;
+  }
+  .data_info_avg {
+    position: relative;
+    left: 20px;
+  }
+  .data_info_driver {
+    position: relative;
+    left: 10px;
+  }
+}

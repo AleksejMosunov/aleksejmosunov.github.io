@@ -1,5 +1,5 @@
 import React from 'react';
-import Popup from './Popup';
+// import Popup from './Popup';
 // import raketa from './img/raketa.png';
 import { myFunction } from './utils';
 
@@ -10,7 +10,7 @@ function Team({ teamData }) {
       <p className="team_stint_time">{teamData.stintTimeAsText}</p>
       <div className="popup team_driver driver_raketa" onClick={myFunction}>
         {teamData.driver}
-        <Popup />
+        {/* <Popup /> */}
 
         {/* <img className="raketa_img" src={raketa} alt="raketa" width="25px" height="25px" /> */}
       </div>

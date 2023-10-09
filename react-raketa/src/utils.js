@@ -6,32 +6,40 @@ import data from './sample-endurance.json';
 //   arrTeam.push(driver);
 //   return driver;
 // });
-export let arrLaps = [];
+
 // export let stringStintTime = formattedTimeToString(stintTimeFromJson);
 // export let stintTimeToNumber = formattedTime(stintTimeFromJson);
-export let info = data.Drivers[0].Drivers;
-export let teamNumber = data.Drivers[0].Kart.Name;
-export let driver = info[0].Alias;
-export let leftTime = data.ClockMs / 1000;
-export let stintTimeFromJson = data.Drivers[0].StintTimeMs / 1000;
-export let pits = data.Drivers[0].TotalPitStops;
+// export let info = data.Drivers[0].Drivers;
+// export let teamNumber = data.Drivers[0].Kart.Name;
+// export let driver = info[0].Alias;
 
-export let arrMinusThree = arrLaps.slice(3, arrLaps.length);
-export let sortedArr = arrMinusThree.sort((a, b) => a - b);
+// export let stintTimeFromJson = data.Drivers[0].StintTimeMs / 1000;
 
-export let avgLapsTime = +AvgLapsTime(arrMinusThree).toFixed(2);
-export let tenBestLaps = sortedArr.slice(0, 10);
-export let avgTenBestLaps = +AvgLapsTime(tenBestLaps).toFixed(2);
-export let bestLap = Math.min(...arrLaps);
+// export let arrMinusThree = arrLaps.slice(3, arrLaps.length);
+// export let sortedArr = arrMinusThree.sort((a, b) => a - b);
+
+// export let avgLapsTime = +AvgLapsTime(arrMinusThree).toFixed(2);
+// export let tenBestLaps = sortedArr.slice(0, 10);
+// export let avgTenBestLaps = +AvgLapsTime(tenBestLaps).toFixed(2);
+// export let bestLap = Math.min(...arrLaps);
 
 export let teamInfo = data.Drivers.map((driver) => {
+  let leftTime = data.ClockMs / 1000;
+  let pits = data.Drivers[0].TotalPitStops;
+  let arrLaps = [];
+  arrLaps.push(driver.LastTimeMs / 1000);
+  arrLaps.push(driver.LastTimeMs / 1000);
+  arrLaps.push(driver.LastTimeMs / 1000);
+  arrLaps.push(driver.LastTimeMs / 1000);
+  arrLaps.push(driver.LastTimeMs / 1000);
+  arrLaps.push(driver.LastTimeMs / 1000);
+  arrLaps.push(driver.LastTimeMs / 1000);
   let arrMinusThree = arrLaps.slice(3, arrLaps.length);
   let sortedArr = arrMinusThree.sort((a, b) => a - b);
   let tenBestLaps = sortedArr.slice(0, 10);
   let bestLap = Math.min(...arrLaps);
   let stintTime = driver.StintTimeMs / 1000;
-  arrLaps.push(driver.LastTimeMs / 1000);
-
+  console.log(sortedArr);
   // AVG LEFT STINTS
   let stintTimeToNumber = formattedTime(stintTime);
   const quantityOfPits = 14;
@@ -39,19 +47,18 @@ export let teamInfo = data.Drivers.map((driver) => {
   let pitsLeft = (quantityOfPits - pits) * 3 * 60;
   let avgStintLeft = (leftTime + stintTimeToNumber * 60 - pitsLeft) / quantityOfStintsLefts;
   // AVG LEFT STINTS
-
-  console.log(stintTime);
   return {
-    arrLaps: [],
     teamId: driver.Kart.Name,
     stintTime: formattedTime(stintTime),
-    stintTimeAsText: formattedTimeToString(stintTime),
+    stintTimeAsText: formattedTimeToString(stintTime).slice(0, 5).replace('.', ''),
     driver: driver.Drivers[0].Alias,
     averageTime: AvgLapsTime(arrMinusThree).toFixed(2),
-    averageBestTenTime: +AvgLapsTime(tenBestLaps).toFixed(2),
+    averageBestTenTime: AvgLapsTime(tenBestLaps).toFixed(2),
     bestTime: bestLap.toFixed(2),
     averageStintTime: avgStintLeft,
-    averageStintTimeAsText: formattedAvgStintLeftToString(avgStintLeft).slice(0, 5),
+    averageStintTimeAsText: formattedAvgStintLeftToString(avgStintLeft)
+      .slice(0, 6)
+      .replace('.', ''),
   };
 });
 
@@ -88,7 +95,7 @@ export function formattedTimeToString(time) {
   let minutes = Math.floor(time / 60);
   let seconds = time % 60;
   let total = `${minutes}:${seconds}`;
-  return total.slice(0, 4);
+  return total;
 }
 
 export function formattedAvgStintLeftToString(time) {
@@ -96,7 +103,7 @@ export function formattedAvgStintLeftToString(time) {
   let minutes = Math.floor(time / 60);
   let seconds = time % 60;
   let total = `${minutes}:${seconds}`;
-  return total.slice(0, 5);
+  return total;
 }
 
 // const quantityOfPits = 14;
