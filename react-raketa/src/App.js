@@ -1,7 +1,7 @@
-import './App.css';
+import React from 'react';
+import Team from './Team';
+import { teamInfo } from './utils';
 
-function App() {
-  return <div className="App"></div>;
+export default function App() {
+  return teamInfo.map((teamData) => <Team teamData={teamData} />);
 }
-
-export default App;

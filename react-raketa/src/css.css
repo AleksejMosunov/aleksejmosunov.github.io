@@ -139,8 +139,9 @@ input::placeholder {
   color: white;
   font-size: 20px;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   text-align: center;
+  align-items: center;
 }
 
 .team {
@@ -163,12 +164,12 @@ input::placeholder {
 
 .data_info_avg {
   position: relative;
-  left: 40px;
+  left: 20px;
 }
 
 .data_info_best_time {
   position: relative;
-  left: 10px;
+  left: 15px;
 }
 
 .data_info_last_time {
@@ -181,9 +182,14 @@ input::placeholder {
   left: 25px;
 }
 
-.data_info_stint {
+/* .data_info_stint {
   position: relative;
-  left: 18px;
+  left: 10px;
+} */
+
+.data_info_avg_ten {
+  position: relative;
+  left: 20px;
 }
 
 .team_number {
@@ -243,9 +249,13 @@ input::placeholder {
 .team_previous_time,
 .team_stint_time,
 .team_best_time {
-  border-radius: 5px;
-  width: 65px;
-  padding: 5px 0 5px 0;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.team_avgTenLaps_time {
+  padding: 5px;
+  border-radius: 8px;
 }
 
 .copyright {
@@ -309,12 +319,17 @@ input::placeholder {
 
   .data_info_driver {
     position: relative;
-    left: 18px;
+    left: 5px;
   }
 
   .data_info_avg {
     position: relative;
-    left: 18px;
+    left: 25px;
+  }
+
+  .data_info_avg_ten {
+    position: relative;
+    left: 17px;
   }
 
   .data_info_best_time {
@@ -322,25 +337,15 @@ input::placeholder {
     left: 8px;
   }
 
-  .data_info_last_time {
+  .data_info_avg_stint_team_time {
     position: relative;
-    left: 10px;
-  }
-
-  .data_info_previous_time {
-    position: relative;
-    left: 5px;
-  }
-
-  .data_info_stint {
-    position: relative;
-    left: -5px;
+    right: 5px;
   }
 
   .data_info_holder {
-    font-size: 11px;
+    font-size: 9px;
     word-break: normal;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .time {
@@ -349,7 +354,7 @@ input::placeholder {
   }
 
   .team {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .raketa_img {
@@ -364,7 +369,7 @@ input::placeholder {
   .team_stint_time,
   .team_best_time {
     border-radius: 5px;
-    width: 40px;
+    /* width: 40px; */
   }
 
   .team_number {

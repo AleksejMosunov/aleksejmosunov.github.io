@@ -1,5 +1,5 @@
 import React from 'react';
-import { avgLapsTime, avgTenBestLaps } from './utils';
+import { avgLapsTime, avgTenBestLaps, teamInfo } from './utils';
 
 export default function Popup() {
   return (

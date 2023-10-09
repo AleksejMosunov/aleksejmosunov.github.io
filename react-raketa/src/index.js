@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css.css';
 import Header from './Header';
-import Team from './Team.js';
 import DataForRace from './DataForRace';
 import reportWebVitals from './reportWebVitals';
 import DataName from './DataName';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,31 +13,7 @@ root.render(
     <React.StrictMode>
       <Header />
       <DataName />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
+      <App />
       <DataForRace />
       {/* <footer className="copyright">Aleksej and Eugene &#169; 2023</footer> */}
     </React.StrictMode>
