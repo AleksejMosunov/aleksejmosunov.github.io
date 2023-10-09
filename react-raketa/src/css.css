@@ -243,15 +243,18 @@ input::placeholder {
   background: red;
 }
 
-.team_driver,
-.team_avg_time,
-.team_avgTenLaps_time,
-.team_previous_time,
-.team_stint_time,
-.team_best_time {
-  text-align: left;
+.team_driver {
   text-wrap: nowrap;
 }
+/* .team_avg_time, */
+/* .team_avgTenLaps_time, */
+/* .team_previous_time,
+.team_stint_time,
+.team_best_time {
+  border-radius: 5px;
+  width: 65px;
+  padding: 5px 0 5px 0;
+} */
 
 .team_avgTenLaps_time {
   padding: 5px;

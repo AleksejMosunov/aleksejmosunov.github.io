@@ -39,19 +39,19 @@ export let teamInfo = data.Drivers.map((driver) => {
   let pitsLeft = (quantityOfPits - pits) * 3 * 60;
   let avgStintLeft = (leftTime + stintTimeToNumber * 60 - pitsLeft) / quantityOfStintsLefts;
   // AVG LEFT STINTS
+
+  console.log(stintTime);
   return {
     arrLaps: [],
     teamId: driver.Kart.Name,
     stintTime: formattedTime(stintTime),
-    stintTimeAsText: formattedTimeToString(stintTime).slice(0, 5).replace('.', ''),
+    stintTimeAsText: formattedTimeToString(stintTime),
     driver: driver.Drivers[0].Alias,
     averageTime: AvgLapsTime(arrMinusThree).toFixed(2),
     averageBestTenTime: +AvgLapsTime(tenBestLaps).toFixed(2),
     bestTime: bestLap.toFixed(2),
     averageStintTime: avgStintLeft,
-    averageStintTimeAsText: formattedAvgStintLeftToString(avgStintLeft)
-      .slice(0, 6)
-      .replace('.', ''),
+    averageStintTimeAsText: formattedAvgStintLeftToString(avgStintLeft).slice(0, 5),
   };
 });
 
@@ -88,7 +88,7 @@ export function formattedTimeToString(time) {
   let minutes = Math.floor(time / 60);
   let seconds = time % 60;
   let total = `${minutes}:${seconds}`;
-  return total;
+  return total.slice(0, 4);
 }
 
 export function formattedAvgStintLeftToString(time) {
@@ -96,7 +96,7 @@ export function formattedAvgStintLeftToString(time) {
   let minutes = Math.floor(time / 60);
   let seconds = time % 60;
   let total = `${minutes}:${seconds}`;
-  return total;
+  return total.slice(0, 5);
 }
 
 // const quantityOfPits = 14;
