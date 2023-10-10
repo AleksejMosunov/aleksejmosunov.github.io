@@ -1,7 +1,7 @@
 import React from 'react';
 // import Popup from './Popup';
 // import raketa from './img/raketa.png';
-import { myFunction } from './utils';
+import myFunction from './utils';
 
 function Team({ teamData }) {
   return (
@@ -17,6 +17,7 @@ function Team({ teamData }) {
       <p className="team_avg_time">{teamData.averageTime}</p>
       <p className="team_avgTenLaps_time middle drova raketa">{teamData.averageBestTenTime}</p>
       <p className="team_best_time">{teamData.bestTime}</p>
+      <p className="">{teamData.pits}</p>
       <p className="team_avg_team_time">{teamData.averageStintTimeAsText}</p>
     </div>
   );

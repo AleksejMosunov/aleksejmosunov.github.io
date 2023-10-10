@@ -197,6 +197,11 @@ input::placeholder {
   left: 20px;
 }
 
+.data_info_pits {
+  position: relative;
+  left: 20px;
+}
+
 .team_number {
   width: 40px;
   padding: 5px 0 5px 0;

@@ -15,6 +15,7 @@ function DataName() {
         10 Best
       </p>
       <p className="data_info_best_time">Best time</p>
+      <p className="data_info_pits">Pits</p>
       <p className="data_info_avg_stint_team_time">
         Average <br />
         stint
